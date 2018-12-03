@@ -1,0 +1,2 @@
+[data-node-label]::before{content:attr(data-node-label);display:block;cursor:pointer;padding:5px 10px;margin-bottom:10px;color:#fff;font-size:90%;font-weight:400;font-family:'Open Sans',sans-serif;background-color:#999}
+/*# sourceMappingURL=Backend.css.map */

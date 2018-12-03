@@ -1,0 +1,17 @@
+$backend-node-label-color: #fff !default;
+$backend-node-label-background: #999 !default;
+
+[data-node-label] {
+	&::before {
+		content: attr(data-node-label);
+		display: block;
+		cursor: pointer;
+		padding: 5px 10px;
+		margin-bottom: 10px;
+		color: $backend-node-label-color;
+		font-size: 90%;
+		font-weight: normal;
+		font-family: 'Open Sans', sans-serif;
+		background-color: $backend-node-label-background;
+	}
+}

@@ -1,0 +1,12 @@
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        WebExcess.Label: true
+  Fusion:
+    defaultContext:
+      WebExcessI18nBackend: 'WebExcess\Label\Eel\Helper\TranslationBackendHelper'
+
+WebExcess:
+  Label:
+    includeCss: true

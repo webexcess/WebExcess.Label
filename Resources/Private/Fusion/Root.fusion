@@ -1,0 +1,20 @@
+prototype(Neos.Neos:ContentElementWrapping) {
+    additionalAttributes {
+        data-node-label = ${WebExcessI18nBackend.translate(Neos.Rendering.labelForNodeType(node.nodeType.name))}
+        data-node-label.@if.has = ${node.context.inBackend && q(node).is('[instanceof WebExcess.Label:Show]') ? true : false}
+    }
+}
+
+prototype(Neos.Neos:Page) {
+    head.labelCSS = Neos.Fusion:Tag {
+        tagName = 'link'
+        attributes {
+            rel = 'stylesheet'
+            href = Neos.Fusion:ResourceUri {
+                path = 'resource://WebExcess.Label/Public/Backend.css'
+            }
+        }
+        @if.isEnabled = ${Configuration.setting('WebExcess.Label.includeCss') && node.context.inBackend ? true : false}
+        @position = 'end'
+    }
+}
