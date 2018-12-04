@@ -1,6 +1,6 @@
 {
     "name": "webexcess/label",
-    "description": "Plugin to add a description (NodeType-Label) to an element.",
+    "description": "Helper selector for better selection for content elements in Neos CMS",
     "type": "neos-package",
     "license": "MIT",
     "keywords": [
