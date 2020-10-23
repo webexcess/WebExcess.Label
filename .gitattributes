@@ -2,4 +2,7 @@
 /.gitattributes export-ignore
 /.github export-ignore
 /.gitignore export-ignore
+/.nvmrc export-ignore
+/package.json export-ignore
+/postcss.config.js export-ignore
 /yarn.lock export-ignore

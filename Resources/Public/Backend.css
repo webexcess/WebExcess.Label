@@ -1,2 +1,2 @@
-[data-node-label]::before{content:attr(data-node-label);display:block;cursor:pointer;padding:5px 10px;margin-bottom:10px;color:#fff;font-size:90%;font-weight:400;font-family:'Open Sans',sans-serif;background-color:#999}
+:root{--backend-label-color:#fff;--backend-label-background:#999}[data-node-label]::before{content:attr(data-node-label);display:block;cursor:pointer;padding:5px 10px;margin-bottom:10px;width:100%;color:var(--backend-label-color);font-size:90%;font-weight:400;font-family:'Open Sans',sans-serif;background-color:var(--backend-label-background)}[data-node-label]:empty::before{margin-bottom:0}
 /*# sourceMappingURL=Backend.css.map */

@@ -1,5 +1,7 @@
-$backend-node-label-color: #fff !default;
-$backend-node-label-background: #999 !default;
+:root {
+    --backend-label-color: #fff;
+    --backend-label-background: #999;
+}
 
 [data-node-label] {
 	&::before {
@@ -8,10 +10,15 @@ $backend-node-label-background: #999 !default;
 		cursor: pointer;
 		padding: 5px 10px;
 		margin-bottom: 10px;
-		color: $backend-node-label-color;
+		width: 100%;
+		color: var(--backend-label-color);
 		font-size: 90%;
 		font-weight: normal;
 		font-family: 'Open Sans', sans-serif;
-		background-color: $backend-node-label-background;
+		background-color: var(--backend-label-background);
+	}
+
+	&:empty::before {
+		margin-bottom: 0;
 	}
 }

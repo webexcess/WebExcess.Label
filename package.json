@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "author": "Samuel Hauser <samuel.hauser@webexcess.ch>",
   "license": "MIT",
-  "engines": {
-    "node" : ">=10.11.0"
-  },
   "browserslist": [
     "> 0.5%",
     "last 2 versions",
@@ -17,17 +14,17 @@
   ],
   "scripts": {
     "clean": "rimraf Resources/Public",
-    "compile": "node-sass --output-style=expanded --source-map=true Resources/Private/Assets/Backend.scss Resources/Public/Backend.css",
-    "prefix": "postcss Resources/Public/Backend.css --use=autoprefixer --map=false --output=Resources/Public/Backend.css",
+    "compile": "postcss Resources/Private/Assets/Backend.pcss --output Resources/Public/Backend.css",
     "minify": "cleancss --source-map --source-map-inline-sources --output Resources/Public/Backend.css Resources/Public/Backend.css",
     "dev": "npm run compile -- --watch",
-    "build": "npm run clean && npm run compile && npm run prefix && npm run minify",
+    "build": "npm run clean && npm run compile && npm run minify",
     "start": "npm run dev"
   },
   "dependencies": {
-    "autoprefixer": "^9.3.1",
-    "clean-css-cli": "^4.2.1",
-    "node-sass": "^4.10.0",
-    "postcss-cli": "^6.0.1"
+    "autoprefixer": "^10.0.1",
+    "clean-css-cli": "^4.3.0",
+    "postcss": "^8.1.1",
+    "postcss-cli": "^8.1.0",
+    "postcss-nested": "^5.0.1"
   }
 }
