@@ -8,14 +8,6 @@ By adding `WebExcess.Label:Show` to your NodeType configuration, a helper select
 | ------ | ----- |
 | ![before](Documentation/before.jpg?raw=true "before") | ![after](Documentation/after.jpg?raw=true "after") |
 
-## Compatibility and Maintenance
-WebExcess.Label is currently being maintained for Neos 4.0 and Neos 5.0.
-
-| Neos Version | WebExcess.Label Version | Maintained |
-|--------------|-------------------------|------------|
-| Neos 5.x     | 2.x                     | YES        |
-| Neos 4.x     | 1.x                     | YES        |
-
 ## Installation
 ```
 composer require webexcess/label
